@@ -7,11 +7,6 @@ repository          : Pikachuxxxx/pikachuxxxx.github.io     # Change to <your-us
 remote_theme        : YoussefRaafatNasry/portfolYOU
 
 
-### Plugins ###
-plugins:
-  - jemoji
-
-
 ### Navbar Settings ###
 nav_exclude:                                            # The following paths are excluded from navbar
   - pages/tags.html
@@ -69,6 +64,13 @@ defaults:
     values:                                             # For Documentation Only
       layout: "element"                                 # For Documentation Only
 
+### Plugins ###
+plugins:
+  - jekyll-default-layout
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jemoji
 
 ### Exclude from processing ###
 exclude:
