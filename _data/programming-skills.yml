@@ -1,0 +1,11 @@
+- name: C++
+  percentage: 90
+  color: danger
+
+- name: C
+  percentage: 90
+  color:
+
+- name: Assembly
+  percentage: 60
+  color: dark
