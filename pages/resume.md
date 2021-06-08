@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: null
 title: Resume
 weight: 5
 ---
 
-{% include pages/resume.html %}
+{% include resume.html %}

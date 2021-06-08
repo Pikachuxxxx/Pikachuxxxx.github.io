@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Phani Srikar (aka Pikachuxxxx)
 description         : >-
-                      "A magician who stares at pixels in the hope of turning them into beautiful visuals."
+                      A magician who stares at pixels in the hope of turning them into beautiful visuals.
 baseurl             : ""                                # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : Pikachuxxxx/pikachuxxxx.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -70,7 +70,7 @@ plugins:
   - jekyll-gist
   - jekyll-github-metadata
   - jekyll-include-cache
-  - jemoji
+  - nokogiri
 
 ### Exclude from processing ###
 exclude:
