@@ -50,6 +50,11 @@ collections:
   elements:                                             # For Documentation Only
     output: true                                        # For Documentation Only
 
+### Analytics ###
+analytics:
+  enabled: true
+  google:
+    tracking_id: G-YZQ11LTJTM
 
 ### Defaults for collections ###
 defaults:
