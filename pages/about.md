@@ -2,13 +2,18 @@
 layout: page
 title: About
 permalink: /about/
-weight: 3
+weight: 0
 ---
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-I'm a graphics programmer.....what more do you want?.. I love pixels.....ummmm crunchhhyyy mnom mnom mnom pixelsssss. //TODO: To be updated more about me after I finish eating these tasty pixels.
+Hi, I'm Pikachuxxx or my friends call me Phani (and so can you). I'm a Graphics and Game Engine Programmer.
+
+what more do you want?.. I love pixels.....ummmm crunchhhyyy mnom mnom mnom tasty...pixelsssss.
+
+I love designing and playing with custom engines and experiment with all the graphics APIs. My area of interest is to learn and improve the existing rendering techiniques. I also make homebrew apps for PSVita and PS3. 
+
+//TODO: To be updated more about me after I finish eating these tasty pixels.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}

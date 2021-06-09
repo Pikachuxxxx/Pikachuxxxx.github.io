@@ -1,18 +1,29 @@
-- title: Student, SNIST
-  from: 2017
-  to: 2021
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
 - title: Computer Graphcis Engineer, Viga Entertainment, India
   from: 2021 February
   to: 2021 May
-  description: Lorem ipsum dolor sit amet :,
-               * consectetur adipiscing elit,
-               * sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               * Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description:
+    - Played a crucial role in the depevelopment of in-house motion capture suit.
+    - Created a Vulkan-QT application from scratch to animate the models using mocap data
+    - Helped in programming the microprocessors of the sensors and helped in understanding the data format of the custom in-house sensors
+    
+
+- title: Unity Student Ambassador
+  from: 2019
+  to: 2020
+  description: |
+                - Conducted various Intro to Game development sessions
+                - Helped students learn Blender, Unity and photoshop
+  
+- title: Technical Head(Techvision Club), SNIST
+  from: 2019
+  to: 2020
+  description: |
+    - Helped my fellow students and juniors by mentoring on various techinical topics such as R, data science
+    - Conducted various sessions topics such as Machine learning, data science C++ etc
+    - Personally oversaw the mentoring of over 200+ students
+               
+- title: Student, SNIST
+  from: 2017
+  to: 2021
+  description: Did my bachelors degree in Electronics and Communication Engineering.
+

@@ -8,4 +8,34 @@
 
 - name: Assembly
   percentage: 60
-  color: dark
+  color: light
+  
+- name: CUDA
+  percentage: 60
+  color: success
+
+- name: Objective C++
+  percentage: 60
+  color: secondary
+  
+- name: Swift
+  percentage: 75
+  color: primary
+
+- name: Lua
+  percentage: 85
+  color: light
+  
+- name: C Sharp
+  percentage: 75
+  color: success
+
+- name: GLSL
+  percentage: 75
+  color: success
+  
+- name: HLSL
+  percentage: 75
+  color: success
+  
+  
