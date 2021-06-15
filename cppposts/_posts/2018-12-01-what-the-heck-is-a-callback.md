@@ -1,9 +1,11 @@
 ---
-title: What the heck is a Callback?
-tags: [JavaScript, Nodejs, Web Development]
-style: fill
-color: danger
-description: Learn and understand the basics of callbacks in just 6 minutes with easy examples.
+title: Clean Coding
+tags: [Software Development, Clean Code]
+style:
+color: 
+description: These four “clean code” tips will dramatically improve your engineering team’s productivity
+blog: [C++]
+published: true
 ---
 
 Source: [Brandon Morelli](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)

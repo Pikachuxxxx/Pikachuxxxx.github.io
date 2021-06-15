@@ -1,0 +1,9 @@
+<div class="card-group mt-2">
+
+  {% for post in site.posts %}
+    {% if post.blog contains 'C++' %}
+        {% include cpp/post-card.html %}
+    {% endif %}
+  {% endfor %}
+
+</div>

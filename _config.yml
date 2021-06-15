@@ -40,7 +40,8 @@ author:
 
 ### Posts ###
 permalink: /blog/:title
-
+permalink: /cppposts/:title
+permalink: /cpp/:title
 
 ### Collections ###
 collections:
