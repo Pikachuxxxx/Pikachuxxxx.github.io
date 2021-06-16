@@ -1,20 +1,19 @@
 ---
-title: Clean Coding
-tags: [Software Development, Clean Code]
-style:
-color: 
-description: These four “clean code” tips will dramatically improve your engineering team’s productivity
-blog: [C++]
+title: Setting Up your PS3 for Development
+tags: [PS3, C++, Homebrew]
+style: fill
+color: primary
+description: How to setup the SDK and and your environment to develop for the PS3 system
+blog: [PS3]
 published: true
 ---
 
-Source: [Brandon Morelli](https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced)
+Source: [VTable](https://stackoverflow.com/questions/3065154/undefined-reference-to-vtable) [Object Slicing Wikipedia](https://en.wikipedia.org/wiki/Object_slicing)
 
-![](https://cdn-images-1.medium.com/max/2000/1*pWGJIKats-zuumA3RQNEWQ.jpeg)
 
-## What is a Callback?
+## What is Object Slicing?
 
-**Simply put:** A callback is a function that is to be executed **after** another function has finished executing — hence the name ‘call back’.
+**Simply put:** When a derived class object is assigned to a base class object, additional attributes of a derived class object are sliced off to form the base class object.
 
 **More complexly put:** In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions. Functions that do this are called **higher-order functions**. Any function that is passed as an argument is called a **callback function**.
 
