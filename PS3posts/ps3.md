@@ -8,7 +8,6 @@ permalink: /ps3/
 
 {% include blog/search.html %}
 
-In this blog, I will share my expertise in graphics. I’ll be talking about making some interesting stuff using various APIs, algorithms, concept, tutorial series and about the latest research topics in the computer graphics field.
-Also I’ll teach the magic stare to turn pixels into amazing visuals!
+Here I’ll talk about how to develop games and homebrew apps for the PS3 and PSVita System in extreme detail.  I will walk you through tutorial series and Explain the inner working of the devices in detail. 
 
 {% include ps3/index.html %}

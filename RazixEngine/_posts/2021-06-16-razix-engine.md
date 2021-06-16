@@ -6,4 +6,5 @@ color: warning
 description: What is razix engine?
 blog: [Razix]
 published: true
+permalink: /razix/:title
 ---

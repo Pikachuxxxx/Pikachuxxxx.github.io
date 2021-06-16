@@ -6,6 +6,7 @@ color:
 description: Learn about Object slicing and why it can save your precious data and help master polymorphism.
 blog: [C++]
 published: true
+permalink: /cpp/:title
 ---
 
 Source: [Object Slicing Wikipedia](https://en.wikipedia.org/wiki/Object_slicing)

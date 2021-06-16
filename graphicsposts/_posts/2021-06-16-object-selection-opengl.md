@@ -6,4 +6,5 @@ color: warning
 description: Outlining objects is a great way for your player to know what they have selected
 blog: [Graphics]
 published: true
+permalink: /graphics/:title
 ---

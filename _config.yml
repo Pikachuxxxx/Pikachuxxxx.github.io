@@ -39,9 +39,7 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
-permalink: /cppposts/:title
-permalink: /cpp/:title
+# permalink: /blog/:title
 
 ### Collections ###
 collections:
