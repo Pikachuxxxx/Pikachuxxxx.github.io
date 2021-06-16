@@ -8,3 +8,7 @@ blog: [Razix]
 published: true
 permalink: /razix/:title
 ---
+
+Razix is custom game engine I've been building for past 3 years.
+
+# WIP to be updated

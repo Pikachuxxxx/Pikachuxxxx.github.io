@@ -8,3 +8,6 @@ blog: [Graphics]
 published: true
 permalink: /graphics/:title
 ---
+
+
+# WIP
