@@ -55,6 +55,12 @@ analytics:
   google:
     tracking_id: G-YZQ11LTJTM
 
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+### Disqus ###
+disqus:
+  shortname: phanisrikar                     # Your website Shortname on disqus
+
 ### Defaults for collections ###
 defaults:
   - scope:
