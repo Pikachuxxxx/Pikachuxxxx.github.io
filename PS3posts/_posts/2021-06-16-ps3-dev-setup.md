@@ -61,8 +61,7 @@ Let's get on with the SDK installation process. Unzip the SDK and double-click t
 It looks something like this
 ![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/sdkpath.png)
 Click on the SDK and the Installer should open up, the options should be straigt forward, select all that yout want and click on Install and it should be smooth as butter. Here are the list of selections I made
-![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/sdk
-    vs.png)
+![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/sdk.png)
 
 // TODO: Improve this in detail!
 ## Testing the SDK
@@ -70,7 +69,7 @@ Goto `C:\usr\local\cell\samples\sdk\graphics\psgl` psgl stand for PSGl- Playstat
 
 ![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/vs.png)
 
-Use the Return to XMB aka start in software mode option in the target manager to quit out of the application, as the traditional ps button won't work because you've now switched to debug mode of the OS. I hope you get to see some pretty graphics that will put a wide smile, now that you've setup everything we will begin our journey down this dirty and intruiging rabbit hole. Here is a cube demo I ran from the samples. Looks sick eh? 
+Use the Return to XMB aka start in software mode option in the target manager to quit out of the application, as the traditional ps button won't work because you've now switched to debug mode of the OS. I hope you get to see some pretty graphics that will put a wide smile, now that you've setup everything we will begin our journey down this dirty and intruiging rabbit hole. Here is a cube demo I ran from the samples. Looks sick eh?
 
 ![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/cubedemo.JPG)
 
