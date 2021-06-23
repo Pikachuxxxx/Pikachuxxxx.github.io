@@ -58,3 +58,21 @@ Now you can move to your PC and get ready be a software pirate. First you'll nee
 
 ## SDK Installation
 Let's get on with the SDK installation process. Unzip the SDK and double-click the SDK installer.
+It looks something like this
+![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/sdkpath.png)
+Click on the SDK and the Installer should open up, the options should be straigt forward, select all that yout want and click on Install and it should be smooth as butter. Here are the list of selections I made
+![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/sdk
+    vs.png)
+
+// TODO: Improve this in detail!
+## Testing the SDK
+Goto `C:\usr\local\cell\samples\sdk\graphics\psgl` psgl stand for PSGl- Playstation OpenGL, well I guess as a graphics programmer you'd be more comfortable with some OpenGL ES/2.0 code rather than the daunting Playstaion's GCM API. So open the Visual studio solution selec oyu choice of sample project as the startup project and click on the PS3 debugger that looks like this. This will build and then Open up the PS3 debugger that looks super weird.
+
+![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/vs.png)
+
+Use the Return to XMB aka start in software mode option in the target manager to quit out of the application, as the traditional ps button won't work because you've now switched to debug mode of the OS. I hope you get to see some pretty graphics that will put a wide smile, now that you've setup everything we will begin our journey down this dirty and intruiging rabbit hole. Here is a cube demo I ran from the samples. Looks sick eh? 
+
+![](https://pikachuxxxx.github.io/assets/images/blog/ps3/dep-setup/cubedemo.JPG)
+
+
+If you have any question or trouble during any of the steps feel free to comment below. I'll assist you as soon as possible.
