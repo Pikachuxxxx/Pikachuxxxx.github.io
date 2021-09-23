@@ -1,18 +1,17 @@
 ---
-title: Razix Engine
-tags: [OpenGL, C++]
+title: What is razix engine?
+tags: [OpenGL, Vulkan, DirectX, C++]
 style: fill
 color: warning
-description: What is razix engine?
+description: Cross-Platform 2D and 3D engine with extreme emphasis on scene optimization and implementing state-of-the art rendering techniques.
 blog: [Razix]
 published: true
 permalink: /razix/:title
 ---
-![](https://pikachuxxxx.github.io/assets/images/blog/razix/RazixLogo.png)
 
 # Razix Engine
 
-Razix is custom game engine I've been building for past 3 years.
+![](https://pikachuxxxx.github.io/assets/images/blog/razix/RazixLogo.png)
 
 Razix is a High Performance Research Engine for production pipeline with emphasis on experimenting with different rendering techniques. Razix supports Windows, Mac, Linux, PSVita and PS3 systems.
 
