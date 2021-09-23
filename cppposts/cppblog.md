@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: C++
 weight: 2
@@ -10,4 +10,4 @@ permalink: /cpp/
 
 In this blog, we’ll dive deep into the roots of C++ and emerge enlightened! I will share some interesting designs and tricks to make your code run faster than Bolt!
 
-{% include cpp/index.html %}
+{% include cpp/index.html %} -->
