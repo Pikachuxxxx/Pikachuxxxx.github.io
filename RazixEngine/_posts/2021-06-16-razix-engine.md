@@ -42,17 +42,7 @@ View the [Trello Board](https://trello.com/b/yvWKH1Xr/razix-engine) and the [Arc
 - Asset streaming pipeline and custom asset format
 - Future support for Falcor and Render Graph Editor
 
-# Architecture
-
-#### :warning: Still a work in progress
-
- **For individual module architecture and documentation check the Docs folder or check the individual folders for a detailed description (ex. [Core Systems](./Docs/Architecture/RazixEngine-CoreSystems.png))**
-
-<p float="left">
-  <img src="https://github.com/Pikachuxxxx/Razix/blob/master/Docs/Architecture/RazixEngine-Architecture.png" width="500" />
-  <img src="https://github.com/Pikachuxxxx/Razix/blob/master/Docs/Architecture/RazixEngine-CoreSystems.png" width="400" />
-</p>
 
 [Click to view changelog](https://github.com/Pikachuxxxx/Razix/blob/master/Docs/CHANGELOG.md)
 
-[Click to view ReleaseNotes](./Docs/ReleaseNotes.md)
+[Click to view ReleaseNotes](ttps://github.com/Pikachuxxxx/Razix/blob/master/Docs/ReleaseNotes.md)
