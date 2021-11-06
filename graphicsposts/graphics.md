@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Graphics
+title: Graphics & Blog
 weight: 3
 blog: Graphics
 permalink: /graphics/

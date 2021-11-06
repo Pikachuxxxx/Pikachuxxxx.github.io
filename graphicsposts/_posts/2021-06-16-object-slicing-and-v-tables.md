@@ -4,7 +4,7 @@ tags: [Software Engineering, C++]
 style:
 color:
 description: Learn about Object slicing and why it can save your precious data and help master polymorphism.
-blog: [C++]
+blog: [Graphics]
 published: true
 permalink: /cpp/:title
 ---

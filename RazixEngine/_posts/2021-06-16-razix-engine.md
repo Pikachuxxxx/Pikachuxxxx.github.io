@@ -1,6 +1,6 @@
 ---
 title: What is razix engine?
-tags: [OpenGL, Vulkan, DirectX, C++]
+tags: [OpenGL, Vulkan, DirectX, C++, Razix]
 style: fill
 color: warning
 description: Cross-Platform 2D and 3D engine with extreme emphasis on scene optimization and implementing state-of-the art rendering techniques.
@@ -18,9 +18,6 @@ Razix is a High Performance Research Engine for production pipeline with emphasi
  ---
 
 WARNING: Currently Razix is WIP and the renderer is undergoing major design overhaul hence nothing will make sense
-
-# About
-Cross-Platform 2D and 3D engine with multi render API support (OpenGL, Vulkan DirectX 11, GXM, GCM, GNM and GNMX). Supports a wide range of Renders with extreme emphasis on scene optimization and implementing state-of-the art rendering techniques. The engine architecture supports a very educational and optimized design.
 
 View the [Trello Board](https://trello.com/b/yvWKH1Xr/razix-engine) and the [Architecture notes](https://drive.google.com/file/d/1y5ZFf-h02z3cx6WmUzR8giKScvORzmwx/view?usp=sharing)
 
@@ -41,7 +38,22 @@ View the [Trello Board](https://trello.com/b/yvWKH1Xr/razix-engine) and the [Arc
 - Asset streaming pipeline and custom asset format
 - Future support for Falcor and Render Graph Editor
 
+RoadMap
+
+## V 1.0.0 - RC
+
+![](./assets/images/memoji.jpg)
+
+# Contributing
+More information will be update on creating PRs and other ways to contribute to Razix Engine.
+
+### Style Guide
+Check the [style guide](https://github.com/Pikachuxxxx/Razix/blob/master/Docs/RazixStyleGuide.md) for Razix Style enforcements
+
 
 [Click to view changelog](https://github.com/Pikachuxxxx/Razix/blob/master/Docs/CHANGELOG.md)
 
 [Click to view ReleaseNotes](ttps://github.com/Pikachuxxxx/Razix/blob/master/Docs/ReleaseNotes.md)
+
+# License
+Razix Engine is distributed under Apache 2.0 license. [LICENSE](https://github.com/Pikachuxxxx/Razix/blob/master/LICENSE)
