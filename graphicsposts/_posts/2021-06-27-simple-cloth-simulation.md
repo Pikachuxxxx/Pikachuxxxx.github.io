@@ -5,7 +5,7 @@ style: fill
 color: secondary
 description: Simple cloth simulation
 blog: [Graphics]
-published: true
+published: false
 permalink: /graphics/:title
 ---
 
