@@ -14,7 +14,7 @@ permalink: /graphics/:title
 
 So let's talk about files! Where are they? I need to find this one urgently.
 
-![](https://pikachuxxxx.github.io/assets/images/blog/pulp_fiction.gif)
+![](https://pikachuxxxx.github.io/assets/images/pulp_fiction.gif)
 
 ```
 FILE loveLetter =  *fopen("somewhereHidden/loveLetterToBossCauseIdontWantTobeFired.txt", "r+")
