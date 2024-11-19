@@ -3,7 +3,7 @@ title: Devlog 1 - Voronoi textures using roots of unity
 tags: [Math]
 style: fill
 color: success
-description: soul-crushing devlogs on generative Voronoi textures using roots of unity
+description: generating polygons inside the unit circle
 blog: [Graphics]
 published: true
 permalink: /graphics/:title
