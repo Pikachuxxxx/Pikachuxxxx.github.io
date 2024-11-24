@@ -11,7 +11,8 @@ permalink: /graphics/:title
 
 Hi all, phani here, ready for another blog post? I was dealing with this fuckery🚧 when writing the frame graph for my engine and I had to deal with Nested types and templates and 
 I ran into some fun issues wiile using `typename` and `const` together with MSVC and Clang/GCC. In my engine I store the struct to create a resource as it's nested type and when 
-the frame graph builder takes this type and it's create desc as r-value refernces (&&) and store it. That's the basic idea and I store the nested CreateDesc struct a const member.
+the frame graph builder takes this type and it's `T::CreateDesc` as r-value refernces (&&) and stores it. 
+That's the basic idea and I store the nested CreateDesc struct as a const member along with the resource `T`.
 
 We have a nested type called CreateDesc inside TextureResource, now this struct will be common name for all types of resources.
 Which means we can have a common `T::Desc getResourceDescription()` function without needing virtual functions or common types we can resolve the members during compile time.
@@ -20,7 +21,7 @@ This is very powerful and extremely **type-safe** without the need for any compl
 Seems simple and acceptable I guess. But the order of template and const in MSVC is different from Clang/GCC, as usual MSVC being weak didn't warn and I spent many hours debugging 100s of errors
 I got all over my engine while porting. So let's dive deep to see what's happening here.
 
-Btw, the whole points of using templates herer is to store the different types of resources using TypeErasure and not to deal with Interfaces 
+Btw, the whole points of using templates here is to store the different types of resources using TypeErasure and not to deal with Interfaces 
 and all, you can read more about type erasure here: 
 - https://davekilian.com/cpp-type-erasure.html
 - https://www.youtube.com/watch?v=iMzEUdacznQ
@@ -29,7 +30,8 @@ and all, you can read more about type erasure here:
 
 consider this snippet of code
 ```C++
-truct TextureResource
+
+struct TextureResource
 {
     struct CreateDesc
     {
