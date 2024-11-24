@@ -17,7 +17,7 @@ Yes, today our goal is to generate the randomized phase offset cells for the vor
 
 $$f(x) = e^{i\theta}$$
 
-where $$\theta =  (2\pi k) / N$$, we try to add some randomnedd to $$\theta$$ and see what it looks like shall we?
+where $$\theta =  (2\pi k) / N$$, we try to add some randomness to $$\theta$$ and see what it looks like shall we?
 
 ---
 ### Lemma 2: Controlled Variation with Phase Offsets
