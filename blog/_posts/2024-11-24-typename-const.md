@@ -68,7 +68,7 @@ int main()
 
 ```
 
-> Use these for quick testing/benchmarking on different compiler when dealing with issues with different compilers and you don't have to switch machine
+> Use these for quick testing/benchmarking on different compilers when dealing with issues and you don't have to frequently switch over different machines.
 > - https://godbolt.org
 > - https://cppinsights.io
 > - https://quick-bench.com
