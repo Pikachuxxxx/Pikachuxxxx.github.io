@@ -29,7 +29,7 @@ and all, you can read more about type erasure here:
 ## The Problem
 
 consider this snippet of code
-```C++
+```cpp
 
 struct TextureResource
 {
