@@ -1,5 +1,5 @@
 ---
-title: Devlog 23- Voronoi textures using roots of unity
+title: Devlog 3- Voronoi textures using roots of unity
 tags: [Math]
 style: fill
 color: success
@@ -11,12 +11,12 @@ permalink: /graphics/:title
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
 
 
-Hi all, Happy Valentined Day guys! ❤️ to all the hearbreaks...I hope they heal someday. 
+Hi all, Happy Valentines Day guys! ❤️ to all the hearbreaks...I hope they heal someday. 
 
-Yes, today our goal is to generate a weird looking but some what acceptable voronoi texture.
+So, today our goal is to generate a weird looking but some what acceptable voronoi texture. Let's scale the phas eoffset polygons in a rectangle.
 
-## Scaling the phase offset polygons 
-Phase varitions shifts the roots and generates polygons with irregular sides inside a circle of unit radius.
+## Tiling the phase offset polygons 
+We don't care about the gaps between polygons as some family vooronoi textures can have gaps, so we dont' have to do perfect tilign Yet!
  
 Take this python code:
 
@@ -108,6 +108,8 @@ create_voronoi_texture_in_rectangle(rows, cols, n_sides, offset_range, scale)
 
 ```
 This will generate the output as below: 
+
+We have a very weird looking voronoi texture generated using roots of unity equation, next I'll try to parametrize it more and pack it tightly to make it look like a real world voronoi texture.
 
 ![](https://pikachuxxxx.github.io/assets/images/blog/voronoi/voronoi_tiled.png)
 
