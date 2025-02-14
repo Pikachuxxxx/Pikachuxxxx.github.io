@@ -1,9 +1,9 @@
 ---
-title: Devlog 2 - Voronoi textures using roots of unity
+title: Devlog 23- Voronoi textures using roots of unity
 tags: [Math]
 style: fill
 color: success
-description: generating phase-offset polygons 
+description: tiling phase offset polygons
 blog: [Graphics]
 published: true
 permalink: /graphics/:title
