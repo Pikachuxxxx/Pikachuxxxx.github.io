@@ -113,7 +113,7 @@ We have a very weird looking voronoi texture generated using roots of unity equa
 
 ![](https://pikachuxxxx.github.io/assets/images/blog/voronoi/voronoi_tiled.png)
 
-Noice we are getting forward, this post is just to show some progress and I'm hoping to get a poster ready for HPC 2025 conference. Let's see what happens in the next devlog.
+Noice we are getting forward, this post is just to show some progress. Let's see what happens in the next devlog.
 
 See you soon.
 
