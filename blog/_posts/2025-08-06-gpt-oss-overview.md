@@ -5,9 +5,9 @@ tags: [C++]
 style: fill
 color: warning
 description: What's the fuss and how this is different from the OG transfomer and what gives all the super powers, let's take a look shall we?
-blog: [ML]
+blog: [Graphics]
 published: true
-permalink: /ML/:title
+permalink: /graphics/:title
 ---
 
 Hi, all I'm back with something interesting, so as I wake up on Aug 6th 2025 and open my eyes... something fun happened on Aug 5th 2025 night at 10PM-ish (IST), No she did not text me, she did actually a couple weeks back but, ik it was a ruse and idc about drunk selfish fucks anymore...so i listened to her and kept my composure and saw her being selfish and disrespect me again, it's fine I'm better off like this stone cold and selfish again. I hope this drama is finally done but we never know, I'm def in a much better place back with my engine happily...more posts on razix resouces re-design next week.
