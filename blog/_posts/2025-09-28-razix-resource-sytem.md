@@ -14,12 +14,7 @@ Hi all, well...this will be one the first razix engine posts with deep dive into
 that was re-written in C from C++. I was happy with C++ but a lot of bad decisions has led it into a unrecoverable tar and I wanted a clean slate to make some better decisions.
 
 Re-writing it that too in C99 seemed like a better choice to make some good choices and correct some long standing architectural and implementations bugs
-also if you can do it in all in C why not? Anyways let's talk about life, so I recently quit Qualcomm (mainly because it was thorught a third party consultancy and I didn't like the arrangement).
-Also because I got a change to work for a game studio in Bangalore called LightFurygames, ik this was just 7 months and I was comfortable and contributing well enought at QCOM, 
-why switch? I couldn't say NO at a chance to work at an actual freakin game studio!, I never worked on a full game and it was something I couldn't say no. I always bitched about how indian game dev industry doesn't 
-recruit graphcis programmers etc. But now that this is studio is doing it and I'm getting a front row seat, I say why not? A better adventure, Hell yeah!
-
-No new heartbreaks so you'll be disappointed in that regards, no drama for the last few months so let's get straight into the post shall we.
+also if you can do it in all in C why not? No new heartbreaks so you'll be disappointed in that regards, no drama for the last few months so let's get straight into the post shall we.
 
 ## Razix Resources - new C99 API
 
