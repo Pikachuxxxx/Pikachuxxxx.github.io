@@ -681,6 +681,95 @@ It then lazily creates the resource and it's view and you use them during runtim
 So yeah everything is auto managed now yaaay!!!
 
 
+## [Update 16/11/2025] Optimizing rz_gfx_resource with hot and cold splits
+
+Now we have abig chunk rz_gfx_resource_desc in the original structs, it's pointless to load soo much data, this will be a cache miss fuckup.
+So one way to optimize this and still keep inheritance design intact would be to split the data into hot and cold, use a pointer for cold data, 
+for lazy cache load up. Hot is always on the cache line, I think the below split up gives a good balance without much design refactoring.
+
+```
+RAZIX_RHI_ALIGN_16 typedef struct rz_gfx_resource_cold
+{
+    char                 pName[RAZIX_MAX_RESOURCE_NAME_CHAR];
+    rz_gfx_resource_desc desc;
+} rz_gfx_resource_cold;
+
+typedef struct rz_gfx_resource_hot
+{
+    rz_handle                  handle;    // can also be used to get cold data if cached in Resource Manager Pools
+    rz_gfx_resource_view_hints viewHints;
+    rz_gfx_resource_type       type;
+    rz_gfx_resource_state      currentState;
+    uint32_t                   _pad0[1];
+} rz_gfx_resource_hot;
+
+RAZIX_RHI_ALIGN_16 typedef struct rz_gfx_resource
+{
+    rz_gfx_resource_hot         hot;
+    const rz_gfx_resource_cold* pCold;    // Optional pointer to cold data, can be NULL if not needed
+} rz_gfx_resource;
+```
+
+This should reduce the bloat of rz_gfx_resource, while keeping the API and things simpler, no frontend breaking API, 
+the pCold will only load the data into the cacheline when absolutely necessary, otherwise it's a just a 8-byte data member,
+ofc we still have fake inheritance that helps with consistent frontend API and other things in future. So win-win for now.
+
+#### What changes to Resource Manager?
+
+Will track a secondary ColdData pool for managing memory for the cold data, apart from that you can also get coldData from
+pointerDefererenceing on resource since only then it's loaded into cache, and it's lifetime is tied to rz_gfx_resource.
+Now with minimal user land refactoring we get the cache benefit of not loading bloat and keeping the design intact.
+
+```C++
+    RZResourceFreeListMemPoolTyped<resourceTypeName>     m_##poolName##Pool;                        
+    RZResourceFreeListMemPoolTyped<rz_gfx_resource_cold> m_##poolName##ColdDataPool;
+```
+
+```C++
+// use the hot data handle to get the cold data pool
+#define CREATE_UTIL(name, typeEnum, pool, cold_pool, handleSize)                                                  \
+    rz_handle        handle;                                                                                      \
+    void*            where    = pool.obtain(handle);                                                              \
+    rz_gfx_resource* resource = (rz_gfx_resource*) where;                                                         \
+    if (!where) {                                                                                                 \
+        RAZIX_CORE_ERROR("[Resource Manager] Failed to create resource: {0}. Pool is full!", name);               \
+        return handle;                                                                                            \
+    }                                                                                                             \
+    memset(resource, 0x00, sizeof(rz_gfx_resource));                                                              \
+    resource->hot.type   = typeEnum;                                                                              \
+    resource->hot.handle = handle;                                                                                \
+    resource->pCold      = cold_pool.get(resource->hot.handle);                                                   \
+    if (!resource->pCold) {                                                                                       \
+        RAZIX_CORE_ERROR("[Resource Manager] Failed to create cold data for resource: {0}. Pool is full!", name); \
+        pool.release(handle);                                                                                     \
+        rz_handle_destroy(&handle);                                                                               \
+        return handle;                                                                                            \
+    }                                                                                                             \
+    rz_snprintf(resource->pCold->pName, 256, "%s", name);                                                         \
+    memcpy(&resource->pCold->desc, &desc, handleSize);                                                            \
+    if (m_ResourceTypeCBFuncs[typeEnum].createFuncCB) {                                                           \
+        m_ResourceTypeCBFuncs[typeEnum].createFuncCB(where);                                                      \
+    } else {                                                                                                      \
+        RAZIX_CORE_ERROR("[Resource Manager] Resource Create Callback is NULL for resource: {0}", name);          \
+    }                                                                                                             \
+    return handle;
+
+#define DESTROY_UTIL(pool, cold_pool, message)                                                                                        \
+    if (rz_handle_is_valid(&handle)) {                                                                                                \
+        rz_gfx_resource* resource = (rz_gfx_resource*) pool.get(handle);                                                              \
+        RAZIX_ASSERT(resource != NULL, "[Resource Manager] Resource is NULL! Cannot destroy resource!");                              \
+        if (m_ResourceTypeCBFuncs[resource->hot.type].destroyFuncCB) {                                                                \
+            m_ResourceTypeCBFuncs[resource->hot.type].destroyFuncCB((void*) resource);                                                \
+        } else {                                                                                                                      \
+            RAZIX_CORE_ERROR("[Resource Manager] Resource Destroy Callback is NULL for resource: {0}", rz_handle_get_index(&handle)); \
+        }                                                                                                                             \
+        pool.release(handle);                                                                                                         \
+        cold_pool.release(handle);                                                                                                    \
+        rz_handle_destroy(&handle);                                                                                                   \
+    } else                                                                                                                            \
+        RAZIX_CORE_ERROR(message);
+```
+
 ## Closing notes
 I hope this makes sense, It took me closer to 3 months and to get all tests pass properly and work on all platforms but this new API helped me fix a lot of things like
 using a dedicated syncobj for each swapchain, asserts in backend, fix submission and presentation by not hiding state in RHI. RHI is now finally stateless like I wanted,
